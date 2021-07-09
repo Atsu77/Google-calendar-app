@@ -2,3 +2,5 @@ node_modules
 bundle.js
 db/volume
 .env
+.gitignore
+.DS_Store
