@@ -28,3 +28,16 @@ export const isFirstDay = (day) => day.date() === 1;
 export const getMonth = ({ year, month }) => {
   return dayjs(`${year}-${month}`);
 };
+
+const getMonthStateCreater = diff =>  month =>{
+  const day = getMonth(month).add(diff, "month");
+  return formatMonth(day);
+}
+
+export const getNextMonth = getMonthStateCreater(1);
+export const getPreviousMonth = getMonthStateCreater(-1);
+
+export const formatMonth = (day) => ({
+  month: day.month() + 1,
+  year: day.year(),
+});
