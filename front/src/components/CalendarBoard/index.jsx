@@ -6,7 +6,7 @@ import { createCalendar } from "../../services/calendar";
 
 const calendar = createCalendar();
 
-const days = ["月", "月", "火", "水", "木", "金", "土"];
+const days = ["日", "月", "火", "水", "木", "金", "土"];
 
 export const CalendarBoard = () => {
   return (
