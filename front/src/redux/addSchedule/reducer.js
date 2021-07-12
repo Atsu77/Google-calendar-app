@@ -2,7 +2,7 @@ import {
   ADD_SCHEDULE_SET_VALUE,
   ADD_SCHEDULE_OPEN_DIALOG,
   ADD_SCHEDULE_CLOSE_DIALOG
-} from "./action";
+} from "./actions";
 
 const init = {
   form: {
